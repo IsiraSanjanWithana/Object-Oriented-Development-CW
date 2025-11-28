@@ -25,7 +25,7 @@ public class Game {
         return false;
     }
 
-    // Helper to format input (e.g. "dota 2" -> "Dota 2")
+    // Helper to format input/ case check (e.g. "dota 2" -> "Dota 2")
     public static String normalize(String input) {
         for (String g : VALID_GAMES) {
             if (g.equalsIgnoreCase(input)) return g;
